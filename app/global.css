@@ -1,0 +1,15 @@
+@import "@radix-ui/colors/sand.css";
+@import "@radix-ui/colors/sand-dark.css";
+@import "@radix-ui/colors/amber.css";
+@import "@radix-ui/colors/amber-dark.css";
+
+:root {
+  --bg-page: var(--sand-1);
+  --bg-active: var(--amber-9);
+  --border-active: var(--amber-11);
+  --box-shadow-1: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background-color: var(--bg-page);
+}

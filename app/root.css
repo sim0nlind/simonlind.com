@@ -1,6 +1,0 @@
-@import "@radix-ui/colors/sand.css";
-@import "@radix-ui/colors/sand-dark.css";
-
-body {
-  background-color: var(--sand-8);
-}

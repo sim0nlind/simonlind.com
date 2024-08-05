@@ -1,20 +1,42 @@
-import { Link } from "@remix-run/react";
+import { NavLink } from "@remix-run/react";
 import styles from "./nav.module.css";
 
 export default function Nav() {
   return (
     <nav className={styles.nav}>
-      <ul>
+      <ul className={styles.navLinks}>
         <li>
-          <Link to="#">About</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${styles.navItem} ${isActive ? styles.active : ""}`
+            }
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <Link to="#">Work</Link>
+          <NavLink
+            to="/work"
+            className={({ isActive }) =>
+              `${styles.navItem} ${isActive ? styles.active : ""}`
+            }
+          >
+            Work
+          </NavLink>
         </li>
         <li>
-          <Link to="#">Photography</Link>
+          <NavLink
+            to="/photography"
+            className={({ isActive }) =>
+              `${styles.navItem} ${isActive ? styles.active : ""}`
+            }
+          >
+            Photography
+          </NavLink>
         </li>
       </ul>
+      <div>logo</div>
     </nav>
   );
 }

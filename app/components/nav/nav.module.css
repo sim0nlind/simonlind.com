@@ -1,3 +1,25 @@
 .nav {
-  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-block-end: 5rem;
+
+  & .navLinks {
+    display: flex;
+    gap: 1rem;
+
+    & .navItem {
+      display: block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      border-radius: 10rem;
+
+      &.active {
+        background-color: var(--bg-active);
+        border: 0.5px solid var(--border-active);
+        box-shadow: var(--box-shadow-1);
+      }
+    }
+  }
 }
