@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import styles from "../styles/about.module.css";
+import styles from "../styles/_index.module.css";
 import profileImage from "../assets/profile-image.jpg";
 import HandwritteName from "../components/handwrittenName/handwrittenName";
 
@@ -19,14 +19,33 @@ export default function Index() {
           alt="portrait of Simon Lind"
           className={styles.profileImage}
         />
-        <ul className={styles.test}>
-          <li>Simon Lind</li>
-          <li>Software designer</li>
-          <li>Copenhagen, Denmark</li>
-        </ul>
+        <div className={styles.infoAndLinks}>
+          <ul>
+            <li>Simon Lind</li>
+            <li>Software designer</li>
+            <li>Copenhagen, Denmark</li>
+          </ul>
+          <ul className={styles.links}>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div>
-        <p>
+        <p className={styles.text}>
           I have more than 8 years of experience shaping products through
           software design, frontend development and strategic product thinking.
           I co-founded Eduflow where I led all product and design. We sold

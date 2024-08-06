@@ -1,0 +1,22 @@
+.profileImage {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin-block-end: 2rem;
+}
+
+.infoAndLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-block-end: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.text {
+  margin-block-end: 2rem;
+}
