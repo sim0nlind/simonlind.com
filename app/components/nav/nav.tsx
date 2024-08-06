@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { NavLink } from "@remix-run/react";
+import { NavLink, useLocation } from "@remix-run/react";
+import LogoButton from "../logoButton/logoButton";
 import styles from "./nav.module.css";
 
 let pages = [
   { id: "/", label: "About" },
-  { id: "work", label: "Work" },
-  { id: "photography", label: "Photography" },
+  { id: "/work", label: "Work" },
+  { id: "/photography", label: "Photography" },
 ];
 
 export default function Nav() {
-  let [activeTab, setActiveTab] = useState(pages[0].id);
+  const location = useLocation();
+  let [activeTab, setActiveTab] = useState(location.pathname);
 
   return (
     <nav className={styles.nav}>
@@ -36,7 +38,9 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-      <div>logo</div>
+      <div>
+        <LogoButton />
+      </div>
     </nav>
   );
 }

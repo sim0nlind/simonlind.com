@@ -1,4 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
+import styles from "../styles/about.module.css";
+import profileImage from "../assets/profile-image.jpg";
+import HandwritteName from "../components/handwrittenName/handwrittenName";
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,7 +14,12 @@ export default function Index() {
   return (
     <>
       <div>
-        <ul>
+        <img
+          src={profileImage}
+          alt="portrait of Simon Lind"
+          className={styles.profileImage}
+        />
+        <ul className={styles.test}>
           <li>Simon Lind</li>
           <li>Software designer</li>
           <li>Copenhagen, Denmark</li>
@@ -29,6 +37,7 @@ export default function Index() {
           toddlers to keep them out of trouble.
         </p>
       </div>
+      <HandwritteName />
     </>
   );
 }
