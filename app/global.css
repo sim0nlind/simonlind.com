@@ -6,7 +6,12 @@
 :root {
   --bg-page: var(--sand-1);
   --bg-active: var(--amber-9);
+  --bg-hover: var(--sand-4);
+
+  --text-1: var(--sand-12);
+
   --border-active: var(--amber-11);
+
   --box-shadow-1: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
 }
 
