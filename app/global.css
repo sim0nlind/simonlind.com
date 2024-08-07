@@ -4,8 +4,10 @@
 @import "@radix-ui/colors/amber-dark.css";
 
 :root {
+  --accent-1: var(--amber-9);
+
   --bg-page: var(--sand-1);
-  --bg-active: var(--amber-9);
+  --bg-active: var(--accent-1);
   --bg-hover: var(--sand-4);
 
   --text-1: var(--sand-12);
@@ -13,8 +15,13 @@
   --border-active: var(--amber-11);
 
   --box-shadow-1: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
+
+  --font-weight-1: 350;
+  --font-weight-2: 450;
+  --font-weight-3: 600;
 }
 
 body {
+  font-weight: var(--font-weight-1);
   background-color: var(--bg-page);
 }

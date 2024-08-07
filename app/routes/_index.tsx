@@ -21,25 +21,25 @@ export default function Index() {
         />
         <div className={styles.infoAndLinks}>
           <ul>
-            <li>Simon Lind</li>
+            <li className={styles.name}>Simon Lind</li>
             <li>Software designer</li>
             <li>Copenhagen, Denmark</li>
           </ul>
           <ul className={styles.links}>
             <li>
-              <a href="#">Link</a>
+              <a href="mailto:simonlindhansen91@gmail.com">Email</a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="#">Twitter</a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="#">Dribbble</a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="#">Strava</a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="#">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@ export default function Index() {
         <p className={styles.text}>
           I have more than 8 years of experience shaping products through
           software design, frontend development and strategic product thinking.
-          I co-founded Eduflow where I led all product and design. We sold
+          I co-founded <a>Eduflow</a> where I led product and design. We sold
           Eduflow to Multiverse in 2023 and that’s where I’m currently working
           as a Design Lead. When I’m not mulling over pixels, user stories and
           code I like to spend my time in a pair of running shoes. I enjoy
