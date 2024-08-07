@@ -43,6 +43,5 @@ body {
 
   color: var(--text-1);
   font-weight: var(--font-weight-1);
-  font-family: "geist";
   background-color: var(--bg-page);
 }
