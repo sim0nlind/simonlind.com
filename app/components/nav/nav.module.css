@@ -13,12 +13,17 @@
       display: block;
       padding: 0.25rem 0.75rem;
       font-size: 0.875rem;
+      font-weight: var(--font-weight-2);
       line-height: 1.5rem;
       color: var(--text-1);
       border: 0.5px solid transparent;
       border-radius: 10rem;
       position: relative;
       -webkit-tap-highlight-color: transparent;
+
+      &.active {
+        color: var(--accent-text-1);
+      }
 
       @media (hover: hover) and (pointer: fine) {
         &:hover:not(.active) {
