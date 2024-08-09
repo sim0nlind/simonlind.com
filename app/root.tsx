@@ -17,6 +17,7 @@ export const links: LinksFunction = () => [
   {
     rel: "preload",
     href: "./assets/fonts/Geist-Variable.woff2",
+    as: "font",
     type: "font/woff2",
   },
 ];
