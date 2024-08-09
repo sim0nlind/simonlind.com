@@ -1,9 +1,12 @@
 @import "@radix-ui/colors/sand.css";
 @import "@radix-ui/colors/sand-dark.css";
+@import "@radix-ui/colors/sand-alpha.css";
 @import "@radix-ui/colors/amber.css";
 @import "@radix-ui/colors/amber-dark.css";
+@import "@radix-ui/colors/amber-alpha.css";
 
-:root {
+:root,
+:root .dark {
   --accent-1: var(--amber-9);
   --accent-text-1: var(--sand-12);
 
@@ -22,25 +25,22 @@
   --font-weight-3: 600;
 
   .dark {
-    --accent-1: var(--amber-9);
     --accent-text-1: var(--sand-1);
-
-    --bg-page: var(--sand-1);
-    --bg-active: var(--accent-1);
-    --bg-hover: var(--sand-4);
-
-    --text-1: var(--sand-12);
-
-    --border-active: var(--amber-11);
-
-    --box-shadow-1: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
   }
+}
+
+@font-face {
+  font-family: "Geist";
+  src: local("Geist"), url("./assets/fonts/Geist-Variable.woff2"),
+    url("./assets/fonts/Geist-Variable.ttf");
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  font-family: "geist", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: var(--text-1);
   font-weight: var(--font-weight-1);
   background-color: var(--bg-page);
