@@ -29,13 +29,6 @@
   }
 }
 
-@font-face {
-  font-family: "Geist";
-  src: local("Geist"), url("assets/fonts/Geist-Variable.woff2") format("woff2"),
-    url("assets/fonts/Geist-Variable.ttf") format("truetype");
-  font-weight: 350 600;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
