@@ -13,16 +13,6 @@ import "./global.css";
 import "./tailwind.css";
 import styles from "./root.module.css";
 
-export const links: LinksFunction = () => [
-  {
-    rel: "preload",
-    href: "app/assets/fonts/Geist-Variable.woff2",
-    as: "font",
-    type: "font/woff2",
-    crossOrigin: "anonymous",
-  },
-];
-
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
