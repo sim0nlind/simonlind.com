@@ -16,9 +16,10 @@ import styles from "./root.module.css";
 export const links: LinksFunction = () => [
   {
     rel: "preload",
-    href: "./assets/fonts/Geist-Variable.woff2",
+    href: "app/assets/fonts/Geist-Variable.woff2",
     as: "font",
     type: "font/woff2",
+    crossOrigin: "anonymous",
   },
 ];
 
