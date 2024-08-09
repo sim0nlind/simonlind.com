@@ -31,7 +31,8 @@
 
 @font-face {
   font-family: "geist";
-  src: url("./assets/fonts/Geist-Variable.woff2") format("woff2");
+  src: local("Geist"), url("assets/fonts/Geist-Variable.woff2"),
+    url("assets/fonts/Geist-Variable.ttf");
   font-style: normal;
 }
 
