@@ -34,7 +34,6 @@
   src: local("Geist"), url("assets/fonts/Geist-Variable.woff2") format("woff2"),
     url("assets/fonts/Geist-Variable.ttf") format("truetype");
   font-weight: 350 600;
-  font-display: block;
 }
 
 body {

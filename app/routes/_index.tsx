@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import styles from "../styles/_index.module.css";
 import profileImage from "../assets/profile-image.jpg";
 import HandwritteName from "../components/handwrittenName/handwrittenName";
+import { useCallback } from "react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,6 +12,18 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const copyEmailToClipboard = useCallback(() => {
+    const email = "simonlindhansen91@gmail.com";
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        alert("Email copied to clipboard!");
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  }, []);
+
   return (
     <>
       <div>
@@ -27,7 +40,7 @@ export default function Index() {
           </ul>
           <ul className={styles.links}>
             <li>
-              <a href="mailto:simonlindhansen91@gmail.com">Email</a>
+              <a onClick={copyEmailToClipboard}>Email</a>
             </li>
             <li>
               <a href="#">Twitter</a>
