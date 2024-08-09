@@ -5,8 +5,8 @@ import HandwritteName from "../components/handwrittenName/handwrittenName";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Simon Lind" },
+    { name: "description", content: "Simon Lind's personal website" },
   ];
 };
 
