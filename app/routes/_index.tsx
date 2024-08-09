@@ -2,7 +2,8 @@ import type { MetaFunction } from "@remix-run/node";
 import styles from "../styles/_index.module.css";
 import profileImage from "../assets/profile-image.jpg";
 import HandwritteName from "../components/handwrittenName/handwrittenName";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
+import * as Toast from "@radix-ui/react-toast";
 
 export const meta: MetaFunction = () => {
   return [
@@ -17,15 +18,24 @@ export default function Index() {
     navigator.clipboard
       .writeText(email)
       .then(() => {
-        alert("Email copied to clipboard!");
+        setOpen(true);
       })
       .catch((err) => {
         console.error("Failed to copy: ", err);
       });
   }, []);
 
+  const [open, setOpen] = useState(false);
+
   return (
-    <>
+    <Toast.Provider duration={4000} swipeDirection="right">
+      <Toast.Root className="ToastRoot" open={open} onOpenChange={setOpen}>
+        <Toast.Title className="ToastTitle">
+          simonlindhansen91@gmail.com copied to clipboard
+        </Toast.Title>
+      </Toast.Root>
+      <Toast.Viewport className="ToastViewport" />
+
       <div>
         <img
           src={profileImage}
@@ -70,6 +80,6 @@ export default function Index() {
         </p>
       </div>
       <HandwritteName />
-    </>
+    </Toast.Provider>
   );
 }
