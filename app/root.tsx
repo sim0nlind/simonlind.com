@@ -11,12 +11,13 @@ import type { LinksFunction } from "@remix-run/node";
 import Nav from "./components/nav/nav";
 import "./global.css";
 import "./tailwind.css";
+import geist from "./assets/fonts/Geist-Variable.woff2";
 import styles from "./root.module.css";
 
 export const links: LinksFunction = () => [
   {
     rel: "preload",
-    href: "app/assets/fonts/Geist-Variable.woff2",
+    href: geist,
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",
