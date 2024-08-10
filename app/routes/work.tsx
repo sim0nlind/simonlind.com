@@ -1,6 +1,5 @@
 import styles from "../styles/work.module.css";
 import WorkExperience from "~/components/workExperience/workExperience";
-import profileImage from "../assets/profile-image.jpg";
 
 const WorkExperiences = {
   1: {
