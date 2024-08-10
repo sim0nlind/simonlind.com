@@ -16,13 +16,13 @@
 
   --text-1: var(--sand-12);
 
-  --border-active: var(--amber-11);
+  --border-active: var(--sand-a5);
 
   --box-shadow-1: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
 
   --font-weight-1: 350;
   --font-weight-2: 450;
-  --font-weight-3: 600;
+  --font-weight-3: 550;
 
   .dark {
     --accent-text-1: var(--sand-1);

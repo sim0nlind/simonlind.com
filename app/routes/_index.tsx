@@ -28,13 +28,13 @@ export default function Index() {
   const [open, setOpen] = useState(false);
 
   return (
-    <Toast.Provider duration={4000} swipeDirection="right">
-      <Toast.Root className="ToastRoot" open={open} onOpenChange={setOpen}>
-        <Toast.Title className="ToastTitle">
-          simonlindhansen91@gmail.com copied to clipboard
-        </Toast.Title>
-      </Toast.Root>
-      <Toast.Viewport className="ToastViewport" />
+    <>
+      <Toast.Provider duration={4000}>
+        <Toast.Root open={open} onOpenChange={setOpen}>
+          <Toast.Title>copied</Toast.Title>
+        </Toast.Root>
+        <Toast.Viewport />
+      </Toast.Provider>
 
       <div>
         <img
@@ -50,36 +50,68 @@ export default function Index() {
           </ul>
           <ul className={styles.links}>
             <li>
-              <a onClick={copyEmailToClipboard}>Email</a>
+              <a onClick={copyEmailToClipboard} className={styles.link}>
+                Email
+              </a>
             </li>
             <li>
-              <a href="#">Twitter</a>
+              <a href="#" className={styles.link}>
+                Twitter
+              </a>
             </li>
             <li>
-              <a href="#">Dribbble</a>
+              <a href="#" className={styles.link}>
+                Dribbble
+              </a>
             </li>
             <li>
-              <a href="#">Strava</a>
+              <a href="#" className={styles.link}>
+                Strava
+              </a>
             </li>
             <li>
-              <a href="#">LinkedIn</a>
+              <a href="#" className={styles.link}>
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div>
-        <p className={styles.text}>
-          I have more than 8 years of experience shaping products through
-          software design, frontend development and strategic product thinking.
-          I co-founded <a>Eduflow</a> where I led product and design. We sold
-          Eduflow to Multiverse in 2023 and that’s where I’m currently working
-          as a Design Lead. When I’m not mulling over pixels, user stories and
-          code I like to spend my time in a pair of running shoes. I enjoy
-          distance running, but these days I’m mostly running after my two
-          toddlers to keep them out of trouble.
-        </p>
+        <div className={styles.text}>
+          <p>
+            I have more than 8 years of experience shaping products through
+            software design, frontend development and strategic product
+            thinking.
+          </p>
+          <p>
+            I co-founded{" "}
+            <a
+              href="https://eduflow.com"
+              target="_blank"
+              className={styles.link}
+            >
+              Eduflow
+            </a>{" "}
+            where I led product and design. We sold Eduflow to{" "}
+            <a
+              href="https://multiverse.io"
+              target="_blank"
+              className={styles.link}
+            >
+              Multiverse
+            </a>{" "}
+            in 2023 and that’s where I’m currently working as a Design Lead.
+          </p>
+          <p>
+            When I’m not mulling over pixels, user stories and code I like to
+            spend my time in a pair of running shoes. I enjoy distance running,
+            but these days I’m mostly running after my two toddlers to keep them
+            out of trouble.
+          </p>
+        </div>
       </div>
       <HandwritteName />
-    </Toast.Provider>
+    </>
   );
 }
