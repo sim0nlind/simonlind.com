@@ -4,7 +4,9 @@ import profileImage from "../assets/profile-image.jpg";
 import HandwritteName from "../components/handwrittenName/handwrittenName";
 import { useCallback, useState } from "react";
 import * as Toast from "@radix-ui/react-toast";
-import { X, Clipboard, ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+import { X } from "@phosphor-icons/react/dist/ssr/X";
+import { Clipboard } from "@phosphor-icons/react/dist/ssr/Clipboard";
+import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
 
 export const meta: MetaFunction = () => {
   return [
