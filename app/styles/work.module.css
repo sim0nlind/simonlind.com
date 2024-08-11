@@ -1,3 +1,21 @@
-.image {
-  width: 400px;
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.cvContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .sectionTitle {
+    position: absolute;
+    top: 0.25rem;
+    left: -2rem;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    font-weight: var(--font-weight-3);
+  }
 }

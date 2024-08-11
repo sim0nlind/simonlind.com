@@ -5,7 +5,7 @@ import HandwritteName from "../components/handwrittenName/handwrittenName";
 import { useCallback, useState } from "react";
 import * as Toast from "@radix-ui/react-toast";
 import { X } from "@phosphor-icons/react/dist/ssr/X";
-import { Clipboard } from "@phosphor-icons/react/dist/ssr/Clipboard";
+import { Copy } from "@phosphor-icons/react/dist/ssr/Copy";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
 
 export const meta: MetaFunction = () => {
@@ -59,10 +59,10 @@ export default function Index() {
           </ul>
           <ul className={styles.links}>
             <li>
-              <a onClick={copyEmailToClipboard} className={styles.link}>
+              <button onClick={copyEmailToClipboard} className={styles.link}>
                 Email
-                <Clipboard size={12} className={styles.icon} />
-              </a>
+                <Copy size={12} className={styles.icon} />
+              </button>
             </li>
             <li>
               <a

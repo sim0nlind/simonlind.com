@@ -1,7 +1,5 @@
 .nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-block-end: 5rem;
   margin-inline-start: -0.75rem;
 

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { NavLink, useLocation } from "@remix-run/react";
-import LogoButton from "../logoButton/logoButton";
 import styles from "./nav.module.css";
 
 let pages = [
@@ -38,9 +37,6 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-      <div>
-        <LogoButton />
-      </div>
     </nav>
   );
 }
