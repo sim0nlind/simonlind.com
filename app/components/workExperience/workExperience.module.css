@@ -1,8 +1,13 @@
 .headingContainer {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 0.25rem;
+
+  @media only screen and (min-width: 560px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .title {
@@ -18,4 +23,33 @@
 
 .description {
   max-width: 35rem;
+  margin-block-end: 2rem;
+}
+
+.carousel {
+  width: 100vw;
+  overflow: auto;
+  margin-left: calc(-50vw + 50%);
+  padding-inline: calc(50vw - 50%);
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & .carouselInner {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+
+    & img {
+      border-radius: 0.25rem;
+      scroll-snap-align: center;
+    }
+
+    & .spacer {
+      flex-shrink: 0;
+      width: calc(50vw - 50% - 1rem);
+    }
+  }
 }

@@ -79,8 +79,8 @@
   --viewport-padding: 2rem;
   position: fixed;
   bottom: 1rem;
-  left: 0;
-  right: 0;
+  left: 1rem;
+  right: 1rem;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -111,6 +111,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
+  line-height: 1.35em;
   color: var(--accent-text-1);
   background-color: var(--accent-1);
   border: 1px solid var(--border-active);
@@ -124,7 +125,7 @@
   }
 
   & .close {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     border-radius: 0.25rem;
@@ -132,6 +133,10 @@
     height: 1.5rem;
     background-color: var(--sand-a3);
     transition: background-color ease-out 200ms;
+
+    @media only screen and (min-width: 560px) {
+      display: flex;
+    }
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {
