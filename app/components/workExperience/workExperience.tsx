@@ -6,23 +6,40 @@ export interface WorkExperienceProps {
   title: string;
   description: string;
   year?: string;
-  images?: { src: string; index: number }[];
+  images?: {
+    src: string;
+    index: number;
+  }[];
 }
 
 export default function WorkExperience(props: WorkExperienceProps) {
   const [activeImage, setActiveImage] = useState(0);
+  const imageRefs = useRef<(HTMLImageElement | null)[]>([]);
+
+  function handleImageClick(index: number, ref: HTMLImageElement) {
+    setActiveImage(index);
+    ref.scrollIntoView({ behavior: "smooth" });
+  }
 
   function handleNextImage() {
     if (props.images && activeImage < props.images.length - 1) {
+      const imageRef = imageRefs.current[activeImage + 1];
       setActiveImage(activeImage + 1);
-      console.log(activeImage);
+
+      if (imageRef) {
+        imageRef.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }
 
   function handlePrevImage() {
     if (activeImage !== 0) {
+      const imageRef = imageRefs.current[activeImage - 1];
       setActiveImage(activeImage - 1);
-      console.log(activeImage);
+
+      if (imageRef) {
+        imageRef.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }
 
@@ -43,15 +60,19 @@ export default function WorkExperience(props: WorkExperienceProps) {
                 id={"image-" + image.index}
                 src={image.src}
                 alt={`Image ${image.index}`}
+                ref={(el) => (imageRefs.current[image.index] = el)}
+                onClick={() =>
+                  handleImageClick(image.index, imageRefs.current[image.index])
+                }
               />
             ))}
             <div className={styles.spacer} />
           </div>
-          <button onClick={handlePrevImage}>Prev</button>
-          <button onClick={handleNextImage}>Next</button>
-          <p>{activeImage}</p>
         </div>
       )}
+      <button onClick={handlePrevImage}>Prev</button>
+      <button onClick={handleNextImage}>Next</button>
+      <p>{activeImage}</p>
     </div>
   );
 }

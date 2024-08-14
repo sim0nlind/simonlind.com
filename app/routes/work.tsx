@@ -98,6 +98,7 @@ export default function Work() {
               description={experience.description}
               project={experience.project}
               images={experience.images}
+              ref={experience.ref}
             />
           ))}
       </div>
