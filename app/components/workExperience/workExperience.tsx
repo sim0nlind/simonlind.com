@@ -114,9 +114,9 @@ export default function WorkExperience(props: WorkExperienceProps) {
               <div className={styles.spacer} />
             </div>
           </div>
-          <button onClick={handlePrevImage}>Prev</button>
+          {/* <button onClick={handlePrevImage}>Prev</button>
           <button onClick={handleNextImage}>Next</button>
-          <p>{activeImage}</p>
+          <p>{activeImage}</p> */}
         </>
       )}
     </div>
