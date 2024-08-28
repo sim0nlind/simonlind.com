@@ -1,3 +1,4 @@
+import type { MetaFunction } from "@remix-run/node";
 import styles from "../styles/work.module.css";
 import WorkExperience from "~/components/workExperience/workExperience";
 
@@ -5,6 +6,13 @@ import image1 from "../assets/projects/eduflow-app/1.png";
 import image2 from "../assets/projects/eduflow-app/2.png";
 import image3 from "../assets/projects/eduflow-app/3.png";
 import image4 from "../assets/projects/eduflow-app/4.png";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Simon Lind › Work" },
+    { name: "description", content: "Simon Lind's personal website" },
+  ];
+};
 
 const WorkExperiences = {
   1: {
@@ -113,7 +121,7 @@ export default function Work() {
             />
           ))}
       </div>
-      <div className={styles.cvContainer}>
+      {/* <div className={styles.cvContainer}>
         <h2 className={styles.sectionTitle}>Projects</h2>
         {Object.values(WorkExperiences)
           .filter((experience) => experience.type === "project")
@@ -127,7 +135,7 @@ export default function Work() {
               ref={experience.ref}
             />
           ))}
-      </div>
+      </div> */}
     </section>
   );
 }
