@@ -52,7 +52,7 @@ export default function Index() {
           className={styles.profileImage}
         />
         <div className={styles.infoAndLinks}>
-          <ul>
+          <ul className={styles.info}>
             <li className={styles.name}>Simon Lind</li>
             <li>Software designer</li>
             <li>Copenhagen, Denmark</li>

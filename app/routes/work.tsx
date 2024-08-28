@@ -69,6 +69,32 @@ const WorkExperiences = {
       },
     ],
   },
+  6: {
+    title: "Learning Experience Platform 2",
+    project: "Eduflow",
+    description:
+      "Eduflow was an edtech platform allowing users to create engaging courses quickly to drive outcomes through social learning. Through 4 years I led product and design at Eduflow from its inception to acquisition.",
+    year: undefined,
+    type: "project",
+    images: [
+      {
+        index: 0,
+        src: image1,
+      },
+      {
+        index: 1,
+        src: image2,
+      },
+      {
+        index: 2,
+        src: image3,
+      },
+      {
+        index: 3,
+        src: image4,
+      },
+    ],
+  },
 };
 
 export default function Work() {

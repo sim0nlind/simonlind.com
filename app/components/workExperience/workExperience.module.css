@@ -26,7 +26,17 @@
   margin-block-end: 2rem;
 }
 
+.carouselObserver {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
 .carousel {
+  position: relative;
   width: 100vw;
   overflow: auto;
   margin-left: calc(-50vw + 50%);
@@ -38,6 +48,7 @@
   }
 
   & .carouselInner {
+    position: relative;
     display: flex;
     gap: 1rem;
     width: 100%;

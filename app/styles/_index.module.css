@@ -13,6 +13,16 @@
   line-height: 1.35em;
   margin-block-end: 2rem;
 
+  @media only screen and (min-width: 580px) {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .info {
+    margin-bottom: 0.25rem;
+  }
+
   .name {
     font-weight: var(--font-weight-3);
   }
