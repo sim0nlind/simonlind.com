@@ -4,15 +4,20 @@
   gap: 3.5rem;
 }
 
-.cvContainer {
+.cvContainer,
+.projectsContainer {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
   .sectionTitle {
     font-size: 1.125rem;
     font-weight: var(--font-weight-3);
+    margin-block-end: 2rem;
 
     @media only screen and (min-width: 800px) {
       font-size: 1rem;
@@ -23,4 +28,8 @@
       transform-origin: top left;
     }
   }
+}
+
+.projectsContainer .list {
+  gap: 4rem;
 }

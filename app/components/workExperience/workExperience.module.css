@@ -23,7 +23,6 @@
 
 .description {
   max-width: 35rem;
-  margin-block-end: 2rem;
 }
 
 .carouselObserver {
@@ -39,9 +38,11 @@
   position: relative;
   width: 100vw;
   overflow: auto;
-  margin-left: calc(-50vw + 50%);
+  margin-block-start: 2rem;
+  margin-inline-start: calc(-50vw + 50%);
   padding-inline: calc(50vw - 50%);
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
     display: none;

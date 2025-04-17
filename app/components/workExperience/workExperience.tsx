@@ -16,9 +16,8 @@ export default function WorkExperience(props: WorkExperienceProps) {
   const [activeImage, setActiveImage] = useState(0);
   const observerRef = useRef(null);
   const carouselRef = useRef(null);
-  const carouselOffset = 0;
   const imageRefs = useRef<(HTMLImageElement | null)[]>([]);
-  const [overlappingElement, setOverlappingElement] = useState(null);
+  const [, setOverlappingElement] = useState(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -51,33 +50,29 @@ export default function WorkExperience(props: WorkExperienceProps) {
     };
   }, []);
 
-  function handleImageClick(index: number, ref?: HTMLImageElement | null) {
-    if (carouselRef.current) {
-      (carouselRef.current as HTMLDivElement).scrollTo({
-        left: 640,
-        behavior: "smooth",
-      });
-    }
-  }
-
   function handleNextImage() {
-    if (props.images && activeImage < props.images.length - 1) {
-      const imageRef = imageRefs.current[activeImage + 1];
+    const scrollContainer = carouselRef.current;
+    const imageRef = imageRefs.current[activeImage + 1];
 
-      if (imageRef) {
-        imageRef.scrollIntoView({ behavior: "smooth", inline: "center" });
-      }
-    }
+    scrollContainer.scrollLeft = imageRef.offsetLeft;
+    console.log(scrollContainer.scrollLeft);
   }
 
   function handlePrevImage() {
     if (activeImage !== 0) {
+      const scrollContainer = carouselRef.current;
       const imageRef = imageRefs.current[activeImage - 1];
 
-      if (imageRef) {
-        imageRef.scrollIntoView({ behavior: "smooth", inline: "center" });
+      if (scrollContainer && imageRef) {
+        scrollContainer.scrollLeft = imageRef.offsetLeft;
+        console.log(imageRef.offsetLeft);
       }
     }
+  }
+
+  function handleImageClick(image) {
+    const scrollContainer = carouselRef.current;
+    scrollContainer.scrollLeft = image.offsetLeft;
   }
 
   return (
@@ -101,22 +96,19 @@ export default function WorkExperience(props: WorkExperienceProps) {
                   key={image.index}
                   id={"image-" + image.index}
                   src={image.src}
-                  alt={`Image ${image.index}`}
-                  ref={(el) => (imageRefs.current[image.index] = el)}
+                  alt={`${image.index}`}
                   onClick={() =>
-                    handleImageClick(
-                      image.index,
-                      imageRefs.current[image.index]
-                    )
+                    handleImageClick(imageRefs.current[image.index])
                   }
+                  ref={(el) => (imageRefs.current[image.index] = el)}
                 />
               ))}
               <div className={styles.spacer} />
             </div>
           </div>
-          {/* <button onClick={handlePrevImage}>Prev</button>
+          <button onClick={handlePrevImage}>Prev</button>
           <button onClick={handleNextImage}>Next</button>
-          <p>{activeImage}</p> */}
+          <p>{activeImage}</p>
         </>
       )}
     </div>

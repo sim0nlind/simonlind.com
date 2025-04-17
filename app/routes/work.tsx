@@ -19,31 +19,36 @@ export default function Work() {
     <section className={styles.page}>
       <div className={styles.cvContainer}>
         <h2 className={styles.sectionTitle}>Employment & Education</h2>
-        {Object.values(WorkExperiences)
-          .filter((experience) => experience.type === "cv")
-          .map((experience) => (
-            <WorkExperience
-              key={experience.title}
-              title={experience.title}
-              description={experience.description}
-              year={experience.year}
-            />
-          ))}
+        <div className={styles.list}>
+          {Object.values(WorkExperiences)
+            .filter((experience) => experience.type === "cv")
+            .map((experience) => (
+              <WorkExperience
+                key={experience.title}
+                title={experience.title}
+                description={experience.description}
+                year={experience.year}
+                hoverImageSrc={experience.hoverImageSrc}
+              />
+            ))}
+        </div>
       </div>
-      <div className={styles.cvContainer}>
+      <div className={styles.projectsContainer}>
         <h2 className={styles.sectionTitle}>Projects</h2>
-        {Object.values(WorkExperiences)
-          .filter((experience) => experience.type === "project")
-          .map((experience) => (
-            <WorkExperience
-              key={experience.title}
-              title={experience.title}
-              description={experience.description}
-              project={experience.project}
-              images={experience.images}
-              ref={experience.ref}
-            />
-          ))}
+        <div className={styles.list}>
+          {Object.values(WorkExperiences)
+            .filter((experience) => experience.type === "project")
+            .map((experience) => (
+              <WorkExperience
+                key={experience.title}
+                title={experience.title}
+                description={experience.description}
+                project={experience.project}
+                images={experience.images}
+                ref={experience.ref}
+              />
+            ))}
+        </div>
       </div>
     </section>
   );

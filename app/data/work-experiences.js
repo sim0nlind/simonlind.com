@@ -2,6 +2,8 @@ import image1 from "../assets/projects/eduflow-app/1.png";
 import image2 from "../assets/projects/eduflow-app/2.png";
 import image3 from "../assets/projects/eduflow-app/3.png";
 import image4 from "../assets/projects/eduflow-app/4.png";
+import image5 from "../assets/projects/eduflow-app/5.png";
+import image6 from "../assets/projects/eduflow-app/6.png";
 
 const WorkExperiences = {
   1: {
@@ -44,7 +46,7 @@ const WorkExperiences = {
     title: "Learning Experience Platform",
     project: "Eduflow",
     description:
-      "Eduflow was an edtech platform allowing users to create engaging courses quickly to drive outcomes through social learning. Through 4 years I led product and design at Eduflow from its inception to acquisition.",
+      "Eduflow was an edtech platform that enabled users to quickly create engaging courses to enhance outcomes through social learning. Over four years, I led product and design at Eduflow from its inception to acquisition.",
     year: undefined,
     type: "project",
     images: [
@@ -63,6 +65,14 @@ const WorkExperiences = {
       {
         index: 3,
         src: image4,
+      },
+      {
+        index: 4,
+        src: image5,
+      },
+      {
+        index: 5,
+        src: image6,
       },
     ],
   },
@@ -89,6 +99,14 @@ const WorkExperiences = {
       {
         index: 3,
         src: image4,
+      },
+      {
+        index: 4,
+        src: image5,
+      },
+      {
+        index: 5,
+        src: image6,
       },
     ],
   },

@@ -45,105 +45,113 @@ export default function Index() {
         <Toast.Viewport className={styles.toastViewport} />
       </Toast.Provider>
 
-      <div>
-        <img
-          src={profileImage}
-          alt="portrait of Simon Lind"
-          className={styles.profileImage}
-        />
-        <div className={styles.infoAndLinks}>
-          <ul className={styles.info}>
-            <li className={styles.name}>Simon Lind</li>
-            <li>Software designer</li>
-            <li>Copenhagen, Denmark</li>
-          </ul>
-          <ul className={styles.links}>
-            <li>
-              <button onClick={copyEmailToClipboard} className={styles.link}>
-                Email
-                <Copy size={12} className={styles.icon} />
-              </button>
-            </li>
-            <li>
-              <a
-                href="https://x.com/simonlind"
-                target="_blank"
-                className={styles.link}
-              >
-                Twitter
-                <ArrowUpRight size={12} className={styles.icon} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://dribbble.com/simonlind"
-                target="_blank"
-                className={styles.link}
-              >
-                Dribbble
-                <ArrowUpRight size={12} className={styles.icon} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.strava.com/athletes/32876453"
-                target="_blank"
-                className={styles.link}
-              >
-                Strava
-                <ArrowUpRight size={12} className={styles.icon} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/simonlind/"
-                target="_blank"
-                className={styles.link}
-              >
-                LinkedIn
-                <ArrowUpRight size={12} className={styles.icon} />
-              </a>
-            </li>
-          </ul>
+      <section>
+        <div>
+          <img
+            src={profileImage}
+            alt="portrait of Simon Lind"
+            className={styles.profileImage}
+          />
+          <div className={styles.infoAndLinks}>
+            <ul className={styles.info}>
+              <li className={styles.name}>Simon Lind</li>
+              <li>Software designer</li>
+              <li>Copenhagen, Denmark</li>
+            </ul>
+            <ul className={styles.links}>
+              <li>
+                <button onClick={copyEmailToClipboard} className={styles.link}>
+                  Email
+                  <Copy size={12} className={styles.icon} />
+                </button>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/simonlind"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  Twitter
+                  <ArrowUpRight size={12} className={styles.icon} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://dribbble.com/simonlind"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  Dribbble
+                  <ArrowUpRight size={12} className={styles.icon} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.strava.com/athletes/32876453"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  Strava
+                  <ArrowUpRight size={12} className={styles.icon} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/simonlind/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  LinkedIn
+                  <ArrowUpRight size={12} className={styles.icon} />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div>
-        <div className={styles.text}>
-          <p>
-            I have more than 8 years of experience shaping products through
-            software design, frontend development and strategic product
-            thinking.
-          </p>
-          <p>
-            I co-founded{" "}
-            <a
-              href="https://eduflow.com"
-              target="_blank"
-              className={styles.link}
-            >
-              Eduflow
-              <ArrowUpRight size={12} className={styles.icon} />
-            </a>{" "}
-            where I led product and design. We sold Eduflow to{" "}
-            <a
-              href="https://multiverse.io"
-              target="_blank"
-              className={styles.link}
-            >
-              Multiverse
-              <ArrowUpRight size={12} className={styles.icon} />
-            </a>{" "}
-            in 2023 and that’s where I’m currently working as a Design Lead.
-          </p>
-          <p>
-            When I’m not mulling over pixels, user stories and code I like to
-            spend my time in a pair of running shoes. I enjoy distance running,
-            but these days I’m mostly running after my two toddlers to keep them
-            out of trouble.
-          </p>
+        <div>
+          <div className={styles.text}>
+            <p>
+              I have more than 8 years of experience shaping products through
+              software design, frontend development and strategic product
+              thinking.
+            </p>
+            <p>
+              I co-founded{" "}
+              <a
+                href="https://eduflow.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                Eduflow
+                <ArrowUpRight size={12} className={styles.icon} />
+              </a>{" "}
+              where I led product and design. We sold Eduflow to{" "}
+              <a
+                href="https://multiverse.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                Multiverse
+                <ArrowUpRight size={12} className={styles.icon} />
+              </a>{" "}
+              in 2023 and that’s where I’m currently working as a Design Lead.
+            </p>
+            <p>
+              When I’m not mulling over pixels, user stories and code I like to
+              spend my time in a pair of running shoes. I enjoy distance
+              running, but these days I’m mostly running after my two toddlers
+              to keep them out of trouble.
+            </p>
+          </div>
         </div>
-      </div>
-      <HandwritteName />
+        <HandwritteName />
+      </section>
     </>
   );
 }
