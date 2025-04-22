@@ -2,10 +2,11 @@
   min-height: 100dvh;
   max-width: 100vw;
   overflow: hidden;
-  padding: 2rem;
+  padding: 2rem 2rem 5rem 2rem;
 }
 
 .container {
   margin: 0 auto;
   max-width: 40rem;
+  min-height: calc(100vh - 7rem);
 }

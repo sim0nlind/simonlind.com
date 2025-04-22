@@ -43,7 +43,7 @@
   position: relative;
   cursor: pointer;
   font-weight: var(--font-weight-2);
-  border-bottom: 1px solid var(--accent-1);
+  border-bottom: 1px solid var(--amber-9);
   padding-block-end: 0.125rem;
   transition: border-bottom ease-out 200ms;
 
@@ -122,13 +122,17 @@
   gap: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.35em;
-  color: var(--accent-text-1);
-  background-color: var(--accent-1);
-  border: 1px solid var(--border-active);
+  color: var(--sand-12);
+  background-color: var(--amber-9);
+  border: 1px solid var(--sand-a5);
   box-shadow: var(--box-shadow-1);
   backdrop-filter: blur(8px);
   padding: 0.25rem 0.25rem 0.25rem 0.75rem;
   border-radius: 0.5rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--sand-1);
+  }
 
   & .email {
     font-weight: var(--font-weight-3);

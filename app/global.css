@@ -1,33 +1,18 @@
-@import "@radix-ui/colors/sand.css";
-@import "@radix-ui/colors/sand-dark.css";
-@import "@radix-ui/colors/sand-alpha.css";
+@import "styles/colors.css";
 @import "@radix-ui/colors/amber.css";
 @import "@radix-ui/colors/amber-dark.css";
 @import "@radix-ui/colors/amber-alpha.css";
 
 :root,
 :root .dark {
-  --accent-1: var(--amber-9);
-  --accent-text-1: var(--sand-12);
-
-  --bg-page: var(--sand-1);
-  --bg-active: var(--accent-1);
-  --bg-hover: var(--sand-3);
-
   --text-1: var(--sand-12);
   --text-2: var(--sand-10);
-
-  --border-active: var(--sand-a5);
 
   --box-shadow-1: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
 
   --font-weight-1: 350;
   --font-weight-2: 450;
   --font-weight-3: 550;
-
-  .dark {
-    --accent-text-1: var(--sand-1);
-  }
 }
 
 @font-face {
@@ -45,5 +30,5 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: var(--text-1);
   font-weight: var(--font-weight-1);
-  background-color: var(--bg-page);
+  background-color: var(--sand-1);
 }

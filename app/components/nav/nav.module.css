@@ -1,7 +1,11 @@
 .nav {
   display: flex;
-  margin-block-end: 5rem;
+  margin-block-end: 3rem;
   margin-inline-start: -0.75rem;
+
+  @media only screen and (min-width: 560px) {
+    margin-block-end: 5rem;
+  }
 
   & .navLinks {
     display: flex;
@@ -23,13 +27,17 @@
       -webkit-tap-highlight-color: transparent;
 
       &.active {
-        color: var(--accent-text-1);
+        color: var(--sand-12);
+
+        @media (prefers-color-scheme: dark) {
+          color: var(--sand-1);
+        }
       }
 
       @media (hover: hover) and (pointer: fine) {
         &:hover:not(.active) {
           transition: 150ms ease-out;
-          background-color: var(--bg-hover);
+          background-color: var(--sand-3);
         }
       }
 
@@ -40,8 +48,8 @@
         height: 100%;
         left: 0;
         top: 0;
-        background-color: var(--bg-active);
-        border: 0.5px solid var(--border-active);
+        background-color: var(--amber-9);
+        border: 0.5px solid var(--sand-a5);
         box-shadow: var(--box-shadow-1);
         border-radius: 10rem;
         z-index: -1;

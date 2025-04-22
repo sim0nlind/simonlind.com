@@ -6,7 +6,7 @@ import styles from "./nav.module.css";
 let pages = [
   { id: "/", label: "About" },
   { id: "/work", label: "Work" },
-  // { id: "/photography", label: "Photography" },
+  /* { id: "/photos", label: "Photos" }, */
 ];
 
 export default function Nav() {
