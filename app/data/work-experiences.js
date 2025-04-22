@@ -43,44 +43,18 @@ const WorkExperiences = {
     images: [],
   },
   5: {
-    title: "Learning Experience Platform",
+    title: "Social Learning Experience Platform",
     project: "Eduflow",
     description:
-      "Eduflow was an edtech platform that enabled users to quickly create engaging courses to enhance outcomes through social learning. Over four years, I led product and design at Eduflow from its inception to acquisition.",
-    year: undefined,
-    type: "project",
-    images: [
-      {
-        index: 0,
-        src: image1,
-      },
-      {
-        index: 1,
-        src: image2,
-      },
-      {
-        index: 2,
-        src: image3,
-      },
-      {
-        index: 3,
-        src: image4,
-      },
-      {
-        index: 4,
-        src: image5,
-      },
-      {
-        index: 5,
-        src: image6,
-      },
-    ],
-  },
-  6: {
-    title: "Learning Experience Platform 2",
-    project: "Eduflow",
-    description:
-      "Eduflow was an edtech <strong>platform</strong> allowing users to create engaging courses quickly to drive outcomes through social learning. Through 4 years I led product and design at Eduflow from its inception to acquisition.",
+      "<p>Digital learning should not be limited to watching videos and mindlessly retaking quizzes until you pass. It can be a social experience that motivates learners and strengthens their connection with teachers. Eduflow is a modern Learning Experience Platform (LXP) that provides a more engaging way to create digital learning experiences for higher education and companies, extending beyond boring, disengaging e-learning experiences.</p>" +
+      "<p>Eduflow got wide spread recognition within the e-learning industry and was regarded one of the most favourable tools for instructional designers to use. We managed to grow the product to +50,000 monthly active users with customers from global companies like Google, innovative educational institutions like Hyper Island and prestigious universities like ETH Zürich.</p>" +
+      "<p>Through 4 years I led product and design at Eduflow from the pivot from Peergrade, growing it to a successful acquisition by Multiverse.</p>" +
+      "<p>With a small, but mighty team of only 8 people I led:</p>" +
+      "<ul>" +
+      "<li>UI design and frontend implementation</li>" +
+      "<li> User research and synthesis</li>" +
+      "<li> Product strategy.</li>" +
+      "</ul>",
     year: undefined,
     type: "project",
     images: [

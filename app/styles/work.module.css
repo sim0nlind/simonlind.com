@@ -1,7 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 6rem;
 }
 
 .cvContainer,
@@ -32,4 +32,17 @@
 
 .projectsContainer .list {
   gap: 4rem;
+}
+
+.footer {
+  margin-block-start: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-2);
+
+  & svg {
+    fill: var(--text-2);
+  }
 }

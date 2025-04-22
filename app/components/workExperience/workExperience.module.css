@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  margin-bottom: 0.25rem;
+  margin-block-end: 0.75rem;
 
   @media only screen and (min-width: 560px) {
     flex-direction: row;
@@ -12,6 +12,10 @@
 
 .title {
   font-weight: var(--font-weight-3);
+
+  &.project {
+    font-size: 1.125rem;
+  }
 }
 
 .year {
@@ -22,7 +26,25 @@
 }
 
 .description {
-  max-width: 35rem;
+  &:not(.project) {
+    max-width: 35rem;
+  }
+
+  p {
+    margin-block-end: 1rem;
+  }
+
+  ul {
+    padding-inline-start: 1.5rem;
+  }
+
+  & p:has(+ ul) {
+    margin-block-end: 0.125rem;
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
 }
 
 .carouselObserver {
@@ -49,7 +71,6 @@
   }
 
   & .carouselInner {
-    position: relative;
     display: flex;
     gap: 1rem;
     width: 100%;
@@ -62,6 +83,36 @@
     & .spacer {
       flex-shrink: 0;
       width: calc(50vw - 50% - 1rem);
+    }
+  }
+}
+
+.carouselButtonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-start: 0.5rem;
+  margin-inline-end: -0.25rem;
+}
+
+.carouselButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  transition: background-color 0.15s ease-out;
+
+  & svg {
+    transition: background-color 0.15s ease-out;
+    fill: var(--text-2);
+  }
+
+  &:hover {
+    background-color: var(--sand-4);
+
+    & svg {
+      fill: var(--text-1);
     }
   }
 }

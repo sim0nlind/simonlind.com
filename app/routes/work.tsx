@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import styles from "../styles/work.module.css";
+import { Smiley } from "@phosphor-icons/react/dist/ssr/Smiley";
 
 // Components
 import WorkExperience from "~/components/workExperience/workExperience";
@@ -49,6 +50,10 @@ export default function Work() {
               />
             ))}
         </div>
+      </div>
+      <div className={styles.footer}>
+        <Smiley />
+        More projects coming soon
       </div>
     </section>
   );
