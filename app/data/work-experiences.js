@@ -47,14 +47,8 @@ const WorkExperiences = {
     project: "Eduflow",
     description:
       "<p>Digital learning should not be limited to watching videos and mindlessly retaking quizzes until you pass. It can be a social experience that motivates learners and strengthens their connection with teachers. Eduflow is a modern Learning Experience Platform (LXP) that provides a more engaging way to create digital learning experiences for higher education and companies, extending beyond boring, disengaging e-learning experiences.</p>" +
-      "<p>Eduflow got wide spread recognition within the e-learning industry and was regarded one of the most favourable tools for instructional designers to use. We managed to grow the product to +50,000 monthly active users with customers from global companies like Google, innovative educational institutions like Hyper Island and prestigious universities like ETH Zürich.</p>" +
-      "<p>Through 4 years I led product and design at Eduflow from the pivot from Peergrade, growing it to a successful acquisition by Multiverse.</p>" +
-      "<p>With a small, but mighty team of only 8 people I led:</p>" +
-      "<ul>" +
-      "<li>UI design and frontend implementation</li>" +
-      "<li> User research and synthesis</li>" +
-      "<li> Product strategy.</li>" +
-      "</ul>",
+      "<p>Eduflow got wide spread recognition within the edtech industry and was regarded one of the most favourable tools by instructional designers. We managed to grow the product to +50,000 monthly active users with customers from global companies like Google, innovative educational institutions like Hyper Island and prestigious universities like ETH Zürich.</p>" +
+      "<p>Over four years, I led product and design at Eduflow during its transition from Peergrade, successfully growing the company to a point where it was acquired by Multiverse.</p>",
     year: undefined,
     type: "project",
     images: [
