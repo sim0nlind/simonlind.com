@@ -16,7 +16,7 @@ const WorkExperiences = {
     images: [],
   },
   2: {
-    title: "Co-founder & CPO at Eduflow",
+    title: "Co-founder & Head of Product at Eduflow",
     project: undefined,
     description:
       "I co-founded Eduflow where I led all product and design. Eduflow got acquired by Multiverse in 2023.",

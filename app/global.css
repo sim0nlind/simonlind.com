@@ -32,3 +32,9 @@ body {
   font-weight: var(--font-weight-1);
   background-color: var(--sand-1);
 }
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
+}
