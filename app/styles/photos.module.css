@@ -1,0 +1,60 @@
+.text {
+  font-size: 1.125rem;
+  margin-block-end: 5rem;
+}
+
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: 60rem) {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > *:nth-child(3n + 1) {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.imagesContainer {
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  & .imageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .caption {
+      width: 100%;
+      max-width: 10rem;
+      font-size: 0.875rem;
+      line-height: 1.35em;
+
+      & p:first-of-type {
+        font-weight: var(--font-weight-3);
+      }
+
+      @media (min-width: 60rem) {
+        position: absolute;
+        left: calc(100% + 1rem);
+        bottom: 0;
+      }
+    }
+
+    @media (min-width: 60rem) {
+      &:nth-child(3n + 2) .caption {
+        text-align: right;
+        left: unset;
+        right: calc(100% + 1rem);
+      }
+    }
+  }
+}

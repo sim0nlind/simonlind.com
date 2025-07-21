@@ -29,7 +29,6 @@ export default function Work() {
                 title={experience.title}
                 description={experience.description}
                 year={experience.year}
-                hoverImageSrc={experience.hoverImageSrc}
               />
             ))}
         </div>
@@ -46,7 +45,6 @@ export default function Work() {
                 description={experience.description}
                 project={experience.project}
                 images={experience.images}
-                ref={experience.ref}
               />
             ))}
         </div>

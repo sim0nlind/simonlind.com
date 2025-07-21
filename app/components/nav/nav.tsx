@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "@remix-run/react";
 import styles from "./nav.module.css";
@@ -6,12 +6,12 @@ import styles from "./nav.module.css";
 let pages = [
   { id: "/", label: "About" },
   { id: "/work", label: "Work" },
-  /* { id: "/photos", label: "Photos" }, */
+  { id: "/photos", label: "Photos" },
 ];
 
 export default function Nav() {
   const location = useLocation();
-  let [activeTab, setActiveTab] = useState(location.pathname);
+  const [activeTab, setActiveTab] = useState(location.pathname);
 
   useEffect(() => {
     setActiveTab(location.pathname);

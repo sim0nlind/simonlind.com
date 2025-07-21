@@ -31,6 +31,7 @@ body {
   color: var(--text-1);
   font-weight: var(--font-weight-1);
   background-color: var(--sand-1);
+  text-wrap: pretty;
 }
 
 h1,
