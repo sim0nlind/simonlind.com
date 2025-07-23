@@ -1,12 +1,12 @@
 import type { MetaFunction } from "@remix-run/node";
 import styles from "../styles/photos.module.css";
 
-import thailand from "../assets/photos/thailand.jpg";
-import ubahn from "../assets/photos/ubahn.jpg";
-import farvemollen from "../assets/photos/farvemollen.jpg";
-import levi from "../assets/photos/levi.jpg";
-import sunflowers from "../assets/photos/sunflowers.jpg";
-import tvtower from "../assets/photos/tvtower.jpg";
+import Thailand from "../components/photos/thailand";
+import Sunflowers from "../components/photos/sunflowers";
+import Ubahn from "../components/photos/ubahn";
+import Farvemollen from "../components/photos/farvemollen";
+import Levi from "../components/photos/levi";
+import Tvtower from "../components/photos/tvtower";
 
 export const meta: MetaFunction = () => {
   return [
@@ -26,7 +26,7 @@ export default function Photos() {
       </p>
       <section className={styles.imagesContainer}>
         <div className={styles.imageContainer}>
-          <img src={thailand} alt="1" />
+          <Thailand />
           <div className={styles.caption}>
             <p>Thailand ‘16</p>
             <p>Koh Samet</p>
@@ -34,7 +34,7 @@ export default function Photos() {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <img src={ubahn} alt="1" />
+          <Ubahn />
           <div className={styles.caption}>
             <p>Berlin ‘22</p>
             <p>U-bahn</p>
@@ -42,7 +42,7 @@ export default function Photos() {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <img src={farvemollen} alt="1" />
+          <Farvemollen />
           <div className={styles.caption}>
             <p>Copenhagen '23</p>
             <p>Farvemøllen</p>
@@ -50,7 +50,7 @@ export default function Photos() {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <img src={levi} alt="1" />
+          <Levi />
           <div className={styles.caption}>
             <p>Copenhagen '20</p>
             <p>Levi van Reijn at Real Street</p>
@@ -58,7 +58,7 @@ export default function Photos() {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <img src={sunflowers} alt="1" />
+          <Sunflowers />
           <div className={styles.caption}>
             <p>Copenhagen '22</p>
             <p>Sunflowers at home</p>
@@ -66,7 +66,7 @@ export default function Photos() {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <img src={tvtower} alt="1" />
+          <Tvtower />
           <div className={styles.caption}>
             <p>Berlin ‘22</p>
             <p>TV tower</p>
