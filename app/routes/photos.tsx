@@ -7,6 +7,9 @@ import Ubahn from "../components/photos/ubahn";
 import Farvemollen from "../components/photos/farvemollen";
 import Levi from "../components/photos/levi";
 import Tvtower from "../components/photos/tvtower";
+import Slowshutter from "../components/photos/slowshutter";
+import Car1 from "../components/photos/car1";
+import Car2 from "../components/photos/car2";
 
 export const meta: MetaFunction = () => {
   return [
@@ -71,6 +74,30 @@ export default function Photos() {
             <p>Berlin ‘22</p>
             <p>TV tower</p>
             <p>Mju ii · Portra 400</p>
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <Slowshutter />
+          <div className={styles.caption}>
+            <p>Tokyo ‘18</p>
+            <p>Slow shutter</p>
+            <p>GX80</p>
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <Car1 />
+          <div className={styles.caption}>
+            <p>Bornholm ‘25</p>
+            <p>Old car</p>
+            <p>GR iiix</p>
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <Car2 />
+          <div className={styles.caption}>
+            <p>Italy ‘24</p>
+            <p>Old car</p>
+            <p>GR iiix</p>
           </div>
         </div>
       </section>

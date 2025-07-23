@@ -9,7 +9,7 @@ export default function tvtower() {
       srcSet={`${tvtower400} 400w, ${tvtower800} 800w, ${tvtower1200} 1200w`}
       sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (min-width: 1001px) 1200px"
       src={tvtowerOriginal}
-      alt="Farvemøllen in Copenhagen"
+      alt="Berlin TV tower"
       width="1200"
       height="1882"
     />
