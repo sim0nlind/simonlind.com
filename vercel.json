@@ -1,13 +1,34 @@
 {
+  "framework": null,
   "buildCommand": "npm run build",
   "outputDirectory": "build/client",
+  "installCommand": "npm install",
+  "env": {
+    "REACT_ROUTER_V7": "true"
+  },
+  "functions": {
+    "build/server/index.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
   "routes": [
     {
       "handle": "filesystem"
     },
     {
       "src": "/(.*)",
-      "dest": "/build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js"
+      "dest": "/build/server/index.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Framework",
+          "value": "react-router-v7"
+        }
+      ]
     }
   ]
 }

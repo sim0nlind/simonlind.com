@@ -3,6 +3,7 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "framework": "react-router",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
