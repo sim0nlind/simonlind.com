@@ -1,0 +1,118 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/_lab.lab.001": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_index": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/photos": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/work": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {}
+      },
+      "routes/_lab.lab.001": {
+        "id": "routes/_lab.lab.001",
+        "parentId": "root",
+        "file": "app/routes/_lab.lab.001.tsx",
+        "path": "lab/001",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_index": {
+        "id": "routes/_index",
+        "parentId": "root",
+        "file": "app/routes/_index.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/photos": {
+        "id": "routes/photos",
+        "parentId": "root",
+        "file": "app/routes/photos.tsx",
+        "path": "photos",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/work": {
+        "id": "routes/work",
+        "parentId": "root",
+        "file": "app/routes/work.tsx",
+        "path": "work",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/Users/simonlind/GitHub/simonlind.com/app",
+    "basename": "/",
+    "buildDirectory": "/Users/simonlind/GitHub/simonlind.com/build",
+    "future": {
+      "unstable_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/_lab.lab.001": {
+        "id": "routes/_lab.lab.001",
+        "parentId": "root",
+        "file": "routes/_lab.lab.001.tsx",
+        "path": "lab/001"
+      },
+      "routes/_index": {
+        "id": "routes/_index",
+        "parentId": "root",
+        "file": "routes/_index.tsx",
+        "index": true
+      },
+      "routes/photos": {
+        "id": "routes/photos",
+        "parentId": "root",
+        "file": "routes/photos.tsx",
+        "path": "photos"
+      },
+      "routes/work": {
+        "id": "routes/work",
+        "parentId": "root",
+        "file": "routes/work.tsx",
+        "path": "work"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
