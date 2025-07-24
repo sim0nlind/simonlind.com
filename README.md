@@ -1,6 +1,6 @@
-# Welcome to Remix!
+# Simon Lind's Personal Website
 
-- 📖 [Remix docs](https://remix.run/docs)
+Built with React Router v7.
 
 ## Development
 
@@ -28,7 +28,7 @@ Now you'll need to pick a host to deploy it to.
 
 ### DIY
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+If you're familiar with deploying Node applications, the built-in React Router app server is production-ready.
 
 Make sure to deploy the output of `npm run build`
 

@@ -1,0 +1,18 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build/client",
+  "functions": {
+    "build/server/nodejs_*/index.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js"
+    }
+  ]
+}
