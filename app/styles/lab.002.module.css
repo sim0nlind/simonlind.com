@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sand-2);
+  padding: 4rem 2rem;
+  border-radius: 0.5rem;
+
+  .eyebrow {
+    color: var(--text-2);
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: var(--font-weight-3);
+  }
+
+  h1 {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-3);
+    margin-block-end: 2rem;
+  }
+
+  .buttonsHeading {
+    margin-block: 2rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-3);
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  button {
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-2);
+    background-color: var(--sand-1);
+    height: 2rem;
+    padding: 0 0.75rem;
+    cursor: pointer;
+    border-radius: 99rem;
+    border: 0.5px solid var(--sand-a5);
+  }
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}

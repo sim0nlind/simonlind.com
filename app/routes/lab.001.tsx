@@ -20,7 +20,10 @@ export default function Lab001() {
   };
 
   return (
-    <motion.div className={styles.container}>
+    <div className={styles.container}>
+      <span className={styles.eyebrow}>Experiment #001</span>
+      <h1>Image lightbox effect on click with motion.dev</h1>
+
       <motion.img
         src={thailand}
         alt="Thailand"
@@ -33,6 +36,6 @@ export default function Lab001() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       />
-    </motion.div>
+    </div>
   );
 }

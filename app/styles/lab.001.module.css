@@ -2,6 +2,20 @@
   background-color: var(--sand-2);
   padding: 2rem;
   border-radius: 0.5rem;
+
+  .eyebrow {
+    color: var(--text-2);
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: var(--font-weight-3);
+  }
+
+  h1 {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-3);
+    margin-block-end: 2rem;
+  }
 }
 
 img {
