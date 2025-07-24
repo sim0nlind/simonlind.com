@@ -21,6 +21,7 @@ export default function Lab001() {
 
   return (
     <motion.div className={styles.container}>
+      <h1>Lightbox effect with motion.dev</h1>
       <motion.img
         src={thailand}
         alt="Thailand"
@@ -28,8 +29,7 @@ export default function Lab001() {
         onClick={handleImageClick}
         layout
         transition={{
-          duration: 0.8,
-          delay: 0,
+          duration: 0.6,
           ease: [0, 0.71, 0.2, 1.01],
         }}
       />
