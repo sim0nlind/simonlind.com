@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "react-router";
 import styles from "../styles/_index.module.css";
 import profileImage from "../assets/profile-image.jpg";
 import HandwritteName from "../components/handwrittenName/handwrittenName";

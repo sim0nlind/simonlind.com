@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import type { LinksFunction } from "react-router";
 import { Analytics } from "@vercel/analytics/react";
 
 import Nav from "./components/nav/nav";

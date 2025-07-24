@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "react-router";
 import styles from "../styles/work.module.css";
 import { Smiley } from "@phosphor-icons/react/dist/ssr/Smiley";
 

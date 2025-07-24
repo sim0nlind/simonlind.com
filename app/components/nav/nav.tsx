@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "@remix-run/react";
+import { NavLink, useLocation } from "react-router";
 import styles from "./nav.module.css";
 
 let pages = [
