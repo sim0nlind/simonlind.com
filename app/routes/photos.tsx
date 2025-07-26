@@ -9,7 +9,7 @@ import Levi from "../components/photos/levi";
 import Tvtower from "../components/photos/tvtower";
 import Slowshutter from "../components/photos/slowshutter";
 import Car1 from "../components/photos/car1";
-import Car2 from "../components/photos/car2";
+import Yellowwindows from "../components/photos/yellowwindows";
 
 export const meta: MetaFunction = () => {
   return [
@@ -93,10 +93,10 @@ export default function Photos() {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <Car2 />
+          <Yellowwindows />
           <div className={styles.caption}>
-            <p>Italy ‘24</p>
-            <p>Old car</p>
+            <p>Copenhagen ‘24</p>
+            <p>Windows</p>
             <p>GR iiix</p>
           </div>
         </div>
