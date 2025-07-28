@@ -1,0 +1,108 @@
+.container {
+  background: var(--sand-3);
+  color: var(--text-1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.container > div {
+  background: var(--sand-1);
+  padding: 2rem;
+  max-width: 30rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+.container h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-3);
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.container input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text-1);
+  background: var(--sand-2);
+  border-radius: 0;
+  border: 0.5px solid var(--sand-a4);
+  border-left: none;
+  border-right: none;
+  box-shadow: 0 1px 4px 0 var(--sand-a3);
+  margin: 0;
+  text-align: center;
+}
+
+.incrementButton {
+  background: var(--sand-2) !important;
+  color: var(--text-1) !important;
+  border: 0.5px solid var(--sand-a4) !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  min-width: 48px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.incrementButton:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+  border-right: none !important;
+}
+
+.incrementButton:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+  border-left: none !important;
+}
+
+.incrementButton:hover {
+  background: var(--sand-3) !important;
+}
+
+.container input:focus {
+  outline: none;
+  border-color: var(--amber-9);
+}
+
+.container button {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  min-width: 100px;
+}
+
+.container button:hover {
+  background: #0284c7;
+}
+
+.container button:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.container p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.container div:has(button) {
+  margin-top: 1.5rem;
+}
