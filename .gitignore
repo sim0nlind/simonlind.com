@@ -3,3 +3,8 @@ node_modules
 /.cache
 /build
 .env
+.DS_Store
+app/.DS_Store
+app/assets/.DS_Store
+app/components/.DS_Store
+app/components/photos/.DS_Store
