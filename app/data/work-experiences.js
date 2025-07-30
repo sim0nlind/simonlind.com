@@ -1,15 +1,19 @@
-import image1 from "../assets/projects/eduflow-app/1.png";
-import image2 from "../assets/projects/eduflow-app/2.png";
-import image3 from "../assets/projects/eduflow-app/3.png";
-import image4 from "../assets/projects/eduflow-app/4.png";
-import image5 from "../assets/projects/eduflow-app/5.png";
-import image6 from "../assets/projects/eduflow-app/6.png";
+import eduflowApp1 from "../assets/projects/eduflow-app/1.png";
+import eduflowApp2 from "../assets/projects/eduflow-app/2.png";
+import eduflowApp3 from "../assets/projects/eduflow-app/3.png";
+import eduflowApp4 from "../assets/projects/eduflow-app/4.png";
+import eduflowApp5 from "../assets/projects/eduflow-app/5.png";
+import eduflowApp6 from "../assets/projects/eduflow-app/6.png";
+import eduflowApp7 from "../assets/projects/eduflow-app/7.png";
 
-import image7 from "../assets/projects/eduflow-site/1.png";
-import image8 from "../assets/projects/eduflow-site/2.png";
+import eduflowSite1 from "../assets/projects/eduflow-site/1.png";
+import eduflowSite2 from "../assets/projects/eduflow-site/2.png";
+import eduflowSite3 from "../assets/projects/eduflow-site/3.png";
+import eduflowSite4 from "../assets/projects/eduflow-site/4.png";
 
-import image9 from "../assets/projects/eduflow-academy/1.png";
-import image10 from "../assets/projects/eduflow-academy/2.png";
+import eduflowAcademy1 from "../assets/projects/eduflow-academy/1.png";
+import eduflowAcademy2 from "../assets/projects/eduflow-academy/2.png";
+import eduflowAcademy3 from "../assets/projects/eduflow-academy/3.png";
 
 const WorkExperiences = {
   1: {
@@ -70,35 +74,39 @@ const WorkExperiences = {
     title: "Social Learning Experience Platform",
     project: "Eduflow",
     description:
-      "<p>Digital learning should not be limited to watching videos and mindlessly retaking quizzes until you pass. It can be a social experience that motivates learners and strengthens their connection with teachers. Eduflow is a modern Learning Experience Platform (LXP) that provides a more engaging way to create digital learning experiences for higher education and companies, extending beyond boring, disengaging e-learning experiences.</p>" +
+      "<p>Digital learning should not be limited to watching videos and mindlessly retaking quizzes until you pass. It can be a social experience that motivates learners and strengthens their connection with teachers. Eduflow was a modern Learning Experience Platform (LXP) that provided a more engaging way to create digital learning experiences for higher education and companies, extending beyond boring, disengaging e-learning experiences.</p>" +
       "<p>Eduflow got wide spread recognition within the edtech industry and was regarded one of the most favourable tools by instructional designers. We managed to grow the product to +50,000 monthly active users with customers from global companies like Google, innovative educational institutions like Hyper Island and prestigious universities like ETH Zürich.</p>" +
-      "<p>Over four years, I led product and design at Eduflow during its transition from Peergrade, successfully growing the company to a point where it was acquired by Multiverse.</p>",
+      "<p>Over four years, I led product and design at Eduflow, successfully growing the company to a point where it was acquired by Multiverse.</p>",
     year: undefined,
     type: "project",
     images: [
       {
         index: 0,
-        src: image1,
+        src: eduflowApp1,
       },
       {
         index: 1,
-        src: image2,
+        src: eduflowApp2,
       },
       {
         index: 2,
-        src: image3,
+        src: eduflowApp3,
       },
       {
         index: 3,
-        src: image4,
+        src: eduflowApp4,
       },
       {
         index: 4,
-        src: image5,
+        src: eduflowApp5,
       },
       {
         index: 5,
-        src: image6,
+        src: eduflowApp6,
+      },
+      {
+        index: 7,
+        src: eduflowApp7,
       },
     ],
   },
@@ -114,11 +122,19 @@ const WorkExperiences = {
     images: [
       {
         index: 0,
-        src: image7,
+        src: eduflowSite1,
       },
       {
-        index: 8,
-        src: image8,
+        index: 1,
+        src: eduflowSite2,
+      },
+      {
+        index: 2,
+        src: eduflowSite3,
+      },
+      {
+        index: 3,
+        src: eduflowSite4,
       },
     ],
   },
@@ -134,11 +150,15 @@ const WorkExperiences = {
     images: [
       {
         index: 0,
-        src: image9,
+        src: eduflowAcademy1,
       },
       {
-        index: 8,
-        src: image10,
+        index: 1,
+        src: eduflowAcademy2,
+      },
+      {
+        index: 2,
+        src: eduflowAcademy3,
       },
     ],
   },
