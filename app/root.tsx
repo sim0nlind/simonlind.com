@@ -31,13 +31,15 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Simon Lind's personal website" },
     { property: "og:title", content: "Simon Lind" },
     { property: "og:description", content: "Simon Lind's personal website" },
-    { property: "og:image", content: "/OG.png" },
+    { property: "og:image", content: "https://simonlind.com/OG.png" },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://simonlind.com" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: "Simon Lind" },
     { name: "twitter:description", content: "Simon Lind's personal website" },
-    { name: "twitter:image", content: "/OG.png" },
+    { name: "twitter:image", content: "https://simonlind.com/OG.png" },
   ];
 };
 
