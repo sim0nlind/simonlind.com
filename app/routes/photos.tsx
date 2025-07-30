@@ -21,7 +21,7 @@ export const meta: MetaFunction = () => {
 
 export default function Photos() {
   return (
-    <div>
+    <div className={styles.container}>
       <p className={styles.text}>
         I’ve always enjoyed photography. There’s something special about
         capturing a memorable moment in time. This page includes a selection of
