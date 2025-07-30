@@ -5,6 +5,12 @@ import image4 from "../assets/projects/eduflow-app/4.png";
 import image5 from "../assets/projects/eduflow-app/5.png";
 import image6 from "../assets/projects/eduflow-app/6.png";
 
+import image7 from "../assets/projects/eduflow-site/1.png";
+import image8 from "../assets/projects/eduflow-site/2.png";
+
+import image9 from "../assets/projects/eduflow-academy/1.png";
+import image10 from "../assets/projects/eduflow-academy/2.png";
+
 const WorkExperiences = {
   1: {
     title: "Design Lead at Multiverse",
@@ -93,6 +99,46 @@ const WorkExperiences = {
       {
         index: 5,
         src: image6,
+      },
+    ],
+  },
+  8: {
+    title: "Marketing Website",
+    project: "Eduflow",
+    description:
+      "<p>I designed and developed all marketing pages for Eduflow. I built and deployed the site with a combination of tools — Webflow, FinSweet Attributes, HubSpot and Zapier.</p>" +
+      "<p>The Eduflow marketing site became the top of funnel touch point that drove our demo booking flow and one of our primary sources of customer acquisition.</p>" +
+      "<p><a href='https://www.eduflow.com' target='_blank'>The site</a> is still live, although a few things aren't working any more.</p>",
+    year: undefined,
+    type: "project",
+    images: [
+      {
+        index: 0,
+        src: image7,
+      },
+      {
+        index: 8,
+        src: image8,
+      },
+    ],
+  },
+  9: {
+    title: "Cohort-based Courses Academy",
+    project: "Eduflow",
+    description:
+      "<p>Our most effective marketing strategy was to offer training for our target audience. Through Eduflow Academy we partnered with influential teachers to educate and upskill Instructional Designers through cohort-based courses.</p>" +
+      "<p>I did the visual identity, designed all pages, implemented the frontend and CMS for the Eduflow Academy website.</p>" +
+      "<p>The site is still live at <a href='https://www.eduflow.com/academy' target='_blank'>eduflow.com/academy</a>.</p>",
+    year: undefined,
+    type: "project",
+    images: [
+      {
+        index: 0,
+        src: image9,
+      },
+      {
+        index: 8,
+        src: image10,
       },
     ],
   },

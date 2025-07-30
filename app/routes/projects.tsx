@@ -1,7 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { createMetaTags } from "~/utils/meta";
 import styles from "../styles/projects.module.css";
-import { Smiley } from "@phosphor-icons/react/dist/ssr/Smiley";
 
 // Components
 import WorkExperience from "~/components/workExperience/workExperience";
@@ -34,10 +33,6 @@ export default function Projects() {
               />
             ))}
         </div>
-      </div>
-      <div className={styles.footer}>
-        <Smiley />
-        More projects coming soon
       </div>
     </section>
   );
