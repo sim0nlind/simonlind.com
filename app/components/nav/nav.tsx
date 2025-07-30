@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "@remix-run/react";
+import ThemeSelector from "../theme-selector/theme-selector";
 import styles from "./nav.module.css";
 
-let pages = [
+const pages = [
   { id: "/", label: "About" },
   { id: "/work", label: "Work" },
   { id: "/photos", label: "Photos" },
@@ -41,6 +42,7 @@ export default function Nav() {
           </li>
         ))}
       </ul>
+      <ThemeSelector />
     </nav>
   );
 }

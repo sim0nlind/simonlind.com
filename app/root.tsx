@@ -10,6 +10,7 @@ import type { LinksFunction } from "@remix-run/node";
 import { Analytics } from "@vercel/analytics/react";
 
 import Nav from "./components/nav/nav";
+import { useTheme } from "./hooks/useTheme";
 import "./global.css";
 import "./tailwind.css";
 import geist from "./assets/fonts/Geist-Variable.woff2";
@@ -25,6 +26,13 @@ export const links: LinksFunction = () => [
   },
 ];
 
+function ThemeProvider({ children }: { children: React.ReactNode }) {
+  // Initialize theme but don't block rendering
+  useTheme();
+
+  return <>{children}</>;
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -35,15 +43,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <main className={styles.main}>
-          <div className={styles.container}>
-            <Nav />
-            {children}
-            <ScrollRestoration />
-            <Scripts />
-            <Analytics />
-          </div>
-        </main>
+        <ThemeProvider>
+          <main className={styles.main}>
+            <div className={styles.container}>
+              <Nav />
+              {children}
+              <ScrollRestoration />
+              <Scripts />
+              <Analytics />
+            </div>
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

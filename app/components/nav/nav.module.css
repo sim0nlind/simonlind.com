@@ -1,5 +1,7 @@
 .nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-block-end: 3rem;
   margin-inline-start: -0.75rem;
 
@@ -44,7 +46,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        background-color: var(--amber-9);
+        background-color: var(--accent-color);
         border: 0.5px solid var(--sand-a5);
         box-shadow: var(--box-shadow-1);
         border-radius: 10rem;
