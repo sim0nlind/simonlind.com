@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { createMetaTags } from "~/utils/meta";
 import styles from "../styles/projects.module.css";
 import { Smiley } from "@phosphor-icons/react/dist/ssr/Smiley";
 
@@ -9,10 +10,10 @@ import WorkExperience from "~/components/workExperience/workExperience";
 import WorkExperiences from "../data/work-experiences";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Simon Lind › Work" },
-    { name: "description", content: "Simon Lind's personal website" },
-  ];
+  return createMetaTags({
+    title: "Simon Lind › Work",
+    url: "https://simonlind.com/projects",
+  });
 };
 
 export default function Projects() {

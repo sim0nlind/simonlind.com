@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { createMetaTags } from "~/utils/meta";
 import styles from "../styles/photos.module.css";
 
 import Thailand from "../components/photos/thailand";
@@ -12,10 +13,10 @@ import Car1 from "../components/photos/car1";
 import Yellowwindows from "../components/photos/yellowwindows";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Simon Lind › Photos" },
-    { name: "description", content: "Simon Lind's personal website" },
-  ];
+  return createMetaTags({
+    title: "Simon Lind › Photos",
+    url: "https://simonlind.com/photos",
+  });
 };
 
 export default function Photos() {

@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { createMetaTags } from "~/utils/meta";
 import { motion } from "motion/react";
 import { useState } from "react";
 import styles from "../styles/lab.001.module.css";
@@ -6,10 +7,11 @@ import styles from "../styles/lab.001.module.css";
 import thailand from "../assets/photos/thailand.jpg";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Lab 001 | Simon Lind" },
-    { name: "description", content: "Lab experiment 001" },
-  ];
+  return createMetaTags({
+    title: "Lab 001 | Simon Lind",
+    description: "Lab experiment 001",
+    url: "https://simonlind.com/lab/001",
+  });
 };
 
 export default function Lab001() {

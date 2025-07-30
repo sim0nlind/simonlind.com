@@ -1,13 +1,15 @@
 import type { MetaFunction } from "@remix-run/node";
+import { createMetaTags } from "~/utils/meta";
 import { motion } from "motion/react";
 import { useState } from "react";
 import styles from "../styles/lab.002.module.css";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Lab experiment 002 | Simon Lind" },
-    { name: "description", content: "Lab experiment 002" },
-  ];
+  return createMetaTags({
+    title: "Lab experiment 002 | Simon Lind",
+    description: "Lab experiment 002",
+    url: "https://simonlind.com/lab/002",
+  });
 };
 
 const pathVariants = {

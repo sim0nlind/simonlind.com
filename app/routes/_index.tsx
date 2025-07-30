@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { createMetaTags } from "~/utils/meta";
 import styles from "../styles/_index.module.css";
 import profileImage from "../assets/profile-image.jpg";
 import HandwritteName from "../components/handwrittenName/handwrittenName";
@@ -9,10 +10,7 @@ import { Copy } from "@phosphor-icons/react/dist/ssr/Copy";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Simon Lind" },
-    { name: "description", content: "Simon Lind's personal website" },
-  ];
+  return createMetaTags();
 };
 
 export default function Index() {

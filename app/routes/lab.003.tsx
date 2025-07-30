@@ -1,13 +1,15 @@
 import type { MetaFunction } from "@remix-run/node";
+import { createMetaTags } from "~/utils/meta";
 import { motion, useMotionValue, useTransform, animate } from "motion/react";
 import { useState, useEffect, useRef } from "react";
 import styles from "../styles/lab.003.module.css";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Lab experiment 003 | Simon Lind" },
-    { name: "description", content: "Lab experiment 003" },
-  ];
+  return createMetaTags({
+    title: "Lab experiment 003 | Simon Lind",
+    description: "Lab experiment 003",
+    url: "https://simonlind.com/lab/003",
+  });
 };
 
 function AnimatedInput({
