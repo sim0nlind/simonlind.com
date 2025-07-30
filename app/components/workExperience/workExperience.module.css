@@ -13,7 +13,7 @@
 .title {
   font-weight: var(--font-weight-3);
 
-  &.project {
+  @media only screen and (min-width: 560px) {
     font-size: 1.125rem;
   }
 }
@@ -26,6 +26,10 @@
 }
 
 .description {
+  @media only screen and (min-width: 560px) {
+    font-size: 1.125rem;
+  }
+
   &:not(.project) {
     max-width: 35rem;
   }
@@ -44,6 +48,18 @@
 
   ul li {
     list-style-type: disc;
+  }
+
+  a {
+    border-bottom: 1px solid var(--amber-9);
+    padding-block-end: 0.125rem;
+    transition: border-bottom ease-out 200ms;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        border-bottom: 1px solid var(--text-1);
+      }
+    }
   }
 }
 

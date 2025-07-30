@@ -1,0 +1,31 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.cvContainer,
+.projectsContainer {
+  position: relative;
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-3);
+    margin-block-end: 2rem;
+
+    @media only screen and (min-width: 800px) {
+      font-size: 1rem;
+      position: absolute;
+      top: 0.25rem;
+      left: -2rem;
+      transform: rotate(90deg);
+      transform-origin: top left;
+    }
+  }
+}

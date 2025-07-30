@@ -12,37 +12,55 @@ const WorkExperiences = {
     description:
       "I currently work as a Design Lead at Multiverse. As the most senior designer on the team, I lead cross-pillar projects, manage designers and bridge the gap between design and engineering.",
     year: "2023 — Present",
-    type: "cv",
+    type: "job",
     images: [],
   },
   2: {
     title: "Co-founder & Head of Product at Eduflow",
     project: undefined,
     description:
-      "I co-founded Eduflow where I led all product and design. Eduflow got acquired by Multiverse in 2023.",
+      'I co-founded Eduflow (prev. Peergrade) where I led all product and design. Eduflow got <a href="https://www.uktech.news/education/multiverse-eduflow-acquisition-20230522" target="_blank">acquired by Multiverse in 2023.</a>',
     year: "2016 — 2023",
-    type: "cv",
+    type: "job",
     images: [],
   },
   3: {
+    title: "Freelance designer",
+    project: undefined,
+    description:
+      "While studying for my B.Sc, I assisted various clients with projects that included UI design, web development, video production, and graphic design.",
+    year: "2016",
+    type: "job",
+    images: [],
+  },
+  4: {
     title: "S17 batch at Y Combinator",
     project: undefined,
     description:
       "As part of our startup journey with Eduflow we got accepted into Y Combinator in San Fransisco to participate in their S17 batch.",
     year: "2017",
-    type: "cv",
-    images: [],
-  },
-  4: {
-    title: "Digital Design & Communication at IT-University of CPH",
-    project: undefined,
-    description:
-      "I hold both a B.Sc. and M.Sc. degree from the IT-University of Copenhagen specialising in Interaction Design.",
-    year: "2011 — 2016",
-    type: "cv",
+    type: "education",
     images: [],
   },
   5: {
+    title: "M.Sc. Digital Design & Communication at IT-University of CPH",
+    project: undefined,
+    description:
+      "After graduating from the B.Sc. program, I continued my studies to further specialize in Interaction Design. <a href='/assets/files/thesis.pdf' target='_blank'>My thesis</a> explored how a digital prototype can improve motivation in academic reading through effective pre-reading strategies.",
+    year: "2011 — 2016",
+    type: "education",
+    images: [],
+  },
+  6: {
+    title: "B.Sc. Digital Media & Design at IT-University of CPH",
+    project: undefined,
+    description:
+      "I started off my academic journey at the IT-University of Copenhagen, where I pursued a Master's degree in Digital Design & Communication.",
+    year: "2011 — 2016",
+    type: "education",
+    images: [],
+  },
+  7: {
     title: "Social Learning Experience Platform",
     project: "Eduflow",
     description:

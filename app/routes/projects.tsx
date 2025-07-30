@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import styles from "../styles/work.module.css";
+import styles from "../styles/projects.module.css";
 import { Smiley } from "@phosphor-icons/react/dist/ssr/Smiley";
 
 // Components
@@ -15,24 +15,9 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Work() {
+export default function Projects() {
   return (
     <section className={styles.page}>
-      <div className={styles.cvContainer}>
-        <h2 className={styles.sectionTitle}>Employment & Education</h2>
-        <div className={styles.list}>
-          {Object.values(WorkExperiences)
-            .filter((experience) => experience.type === "cv")
-            .map((experience) => (
-              <WorkExperience
-                key={experience.title}
-                title={experience.title}
-                description={experience.description}
-                year={experience.year}
-              />
-            ))}
-        </div>
-      </div>
       <div className={styles.projectsContainer}>
         <h2 className={styles.sectionTitle}>Projects</h2>
         <div className={styles.list}>

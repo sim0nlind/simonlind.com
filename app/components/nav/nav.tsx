@@ -5,7 +5,8 @@ import styles from "./nav.module.css";
 
 let pages = [
   { id: "/", label: "About" },
-  { id: "/work", label: "Work" },
+  { id: "/projects", label: "Projects" },
+  { id: "/experience", label: "Experience" },
   { id: "/photos", label: "Photos" },
 ];
 
