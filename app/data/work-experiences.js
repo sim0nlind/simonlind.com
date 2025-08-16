@@ -76,7 +76,7 @@ const WorkExperiences = {
     description:
       "<p>Digital learning should not be limited to watching videos and mindlessly retaking quizzes until you pass. It can be a social experience that motivates learners and strengthens their connection with teachers. Eduflow was a modern Learning Experience Platform (LXP) that provided a more engaging way to create digital learning experiences for higher education and companies, extending beyond boring, disengaging e-learning experiences.</p>" +
       "<p>Eduflow got wide spread recognition within the edtech industry and was regarded one of the most favourable tools by instructional designers. We managed to grow the product to +50,000 monthly active users with customers from global companies like Google, innovative educational institutions like Hyper Island and prestigious universities like ETH Zürich.</p>" +
-      "<p>Over four years, I led product and design at Eduflow, successfully growing the company to a point where it was acquired by Multiverse.</p>",
+      "<p>Over four years, I led product and design, driving the company’s growth to the point of its <a href='https://www.uktech.news/education/multiverse-eduflow-acquisition-20230522' target='_blank'>acquisition by Multiverse</a>. My responsibilities included planning and designing features, building our frontend (React), managing the development process, and evolving our product strategy.</p>",
     year: undefined,
     type: "project",
     images: [
