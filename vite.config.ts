@@ -1,6 +1,7 @@
 import { vitePlugin as remix } from "@remix-run/dev";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import { compression } from "vite-plugin-compression";
 
 export default defineConfig({
   plugins: [
@@ -12,5 +13,15 @@ export default defineConfig({
       },
     }),
     tsconfigPaths(),
+    // Gzip compression
+    compression({
+      algorithm: "gzip",
+      ext: ".gz",
+    }),
+    // Brotli compression (better compression ratio)
+    compression({
+      algorithm: "brotliCompress",
+      ext: ".br",
+    }),
   ],
 });
