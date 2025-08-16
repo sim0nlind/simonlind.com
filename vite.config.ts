@@ -1,7 +1,7 @@
 import { vitePlugin as remix } from "@remix-run/dev";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import { compression } from "vite-plugin-compression";
+import compression from "vite-plugin-compression";
 
 export default defineConfig({
   plugins: [
