@@ -65,7 +65,7 @@ const WorkExperiences = {
     title: "B.Sc. Digital Media & Design at IT-University of CPH",
     project: undefined,
     description:
-      "I started off my academic journey at the IT-University of Copenhagen, where I pursued a Master's degree in Digital Design & Communication.",
+      "I started off my academic journey at the IT-University of Copenhagen, where I pursued a Bachelor's degree in Digital Media & Design.",
     year: "2011 — 2016",
     type: "education",
     images: [],
