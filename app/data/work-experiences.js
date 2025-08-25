@@ -57,7 +57,7 @@ const WorkExperiences = {
     project: undefined,
     description:
       "After graduating from the B.Sc. program, I continued my studies to further specialize in Interaction Design. <a href='/assets/files/thesis.pdf' target='_blank'>My thesis</a> explored how a digital prototype can improve motivation in academic reading through effective pre-reading strategies.",
-    year: "2011 — 2016",
+    year: "2014 — 2016",
     type: "education",
     images: [],
   },
@@ -66,7 +66,7 @@ const WorkExperiences = {
     project: undefined,
     description:
       "I started off my academic journey at the IT-University of Copenhagen, where I pursued a Bachelor's degree in Digital Media & Design.",
-    year: "2011 — 2016",
+    year: "2011 — 2014",
     type: "education",
     images: [],
   },
