@@ -16,12 +16,21 @@ import eduflowAcademy2 from "../assets/projects/eduflow-academy/2.png";
 import eduflowAcademy3 from "../assets/projects/eduflow-academy/3.png";
 
 const WorkExperiences = {
+  0: {
+    title: "Co-founder at Agentwork",
+    project: undefined,
+    description:
+      "Currently building something new at Agentwork together with my co-founders David and Malthe. I'm responsible for product, design and frontend development.",
+    year: "2025 — Present",
+    type: "job",
+    images: [],
+  },
   1: {
     title: "Design Lead at Multiverse",
     project: undefined,
     description:
-      "I currently work as a Design Lead at Multiverse. As the most senior designer on the team, I lead cross-pillar projects, manage designers and bridge the gap between design and engineering.",
-    year: "2023 — Present",
+      "I worked as a Design Lead at Multiverse. As the most senior designer on the team, I led cross-pillar projects, managed designers and bridged the gap between design and engineering.",
+    year: "2023 — 2025",
     type: "job",
     images: [],
   },

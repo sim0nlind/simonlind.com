@@ -138,7 +138,7 @@ export default function Index() {
                 Multiverse
                 <ArrowUpRight size={12} className={styles.icon} />
               </a>{" "}
-              in 2023 and that’s where I’m currently working as a Design Lead.
+              in 2023. After +2 years at Multiverse, I'm now back to building from 0 {'->'} 1 again.
             </p>
             <p>
               When I’m not mulling over pixels, user stories and code I like to

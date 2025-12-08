@@ -26,9 +26,9 @@
 }
 
 .description {
-  @media only screen and (min-width: 560px) {
+  /* @media only screen and (min-width: 560px) {
     font-size: 1.125rem;
-  }
+  } */
 
   &:not(.project) {
     max-width: 35rem;

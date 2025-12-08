@@ -8,6 +8,7 @@ let pages = [
   { id: "/projects", label: "Projects" },
   { id: "/experience", label: "Experience" },
   { id: "/photos", label: "Photos" },
+  { id: "/feed", label: "Feed" },
 ];
 
 export default function Nav() {
