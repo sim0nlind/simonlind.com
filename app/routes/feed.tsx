@@ -28,49 +28,49 @@ export default function Photos() {
           <Feed6 />
           <div className={styles.caption}>
             <p>Avatars</p>
-            <p>December, 2025</p>
+            <p>December, '25</p>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Feed5 />
           <div className={styles.caption}>
             <p>Waitlist sign up</p>
-            <p>December, 2025</p>
+            <p>December, '25</p>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Feed4 />
           <div className={styles.caption}>
             <p>Shader experiment</p>
-            <p>December, 2025</p>
+            <p>December, '25</p>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Feed3 />
           <div className={styles.caption}>
             <p>Agentwork · Chat</p>
-            <p>December, 2025</p>
+            <p>December, '25</p>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Feed7 />
           <div className={styles.caption}>
             <p>Sidebar interactions</p>
-            <p>December, 2025</p>
+            <p>December, '25</p>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Feed2 />
           <div className={styles.caption}>
             <p>Agentwork · Home</p>
-            <p>December, 2025</p>
+            <p>December, '25</p>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Feed1 />
           <div className={styles.caption}>
             <p>The light of day</p>
-            <p>December, 2025</p>
+            <p>December, '25</p>
           </div>
         </div>
       </section>
