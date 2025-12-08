@@ -128,17 +128,8 @@ export default function Index() {
                 Eduflow
                 <ArrowUpRight size={12} className={styles.icon} />
               </a>{" "}
-              where I led product and design. We sold Eduflow to{" "}
-              <a
-                href="https://multiverse.io"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                Multiverse
-                <ArrowUpRight size={12} className={styles.icon} />
-              </a>{" "}
-              in 2023. After +2 years at Multiverse, I'm now back to building from 0 {'->'} 1 again.
+              where I led product and design. We sold Eduflow in 2023 to Multiverse.
+              After +2 years at Multiverse, I'm now back to building from 0 {'->'} 1 again.
             </p>
             <p>
               When I’m not mulling over pixels, user stories and code I like to
