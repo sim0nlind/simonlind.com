@@ -58,7 +58,7 @@
     }
 
     @media (min-width: 60rem) {
-      &:nth-child(3n + 2) .caption {
+      &:nth-child(even) .caption {
         text-align: right;
         left: unset;
         right: calc(100% + 1rem);

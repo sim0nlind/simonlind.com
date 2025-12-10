@@ -9,6 +9,10 @@ import Feed4 from "../components/feed/4";
 import Feed5 from "../components/feed/5";
 import Feed6 from "../components/feed/6";
 import Feed7 from "../components/feed/7";
+import Feed8 from "../components/feed/8";
+import Feed9 from "../components/feed/9";
+import Feed10 from "../components/feed/10";
+import Feed11 from "../components/feed/11";
 
 export const meta: MetaFunction = () => {
   return createMetaTags({
@@ -24,6 +28,34 @@ export default function Photos() {
         A feed of sketches, ideas, experiments & work-in-progress.
       </p>
       <section className={styles.imagesContainer}>
+        <div className={styles.imageContainer}>
+          <Feed11 />
+          <div className={styles.caption}>
+            <p>Logo variations</p>
+            <p>December, '25</p>
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <Feed10 />
+          <div className={styles.caption}>
+            <p>Copy to clipboard</p>
+            <p>December, '25</p>
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <Feed9 />
+          <div className={styles.caption}>
+            <p>Dialog</p>
+            <p>December, '25</p>
+          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <Feed8 />
+          <div className={styles.caption}>
+            <p>Task proposal</p>
+            <p>December, '25</p>
+          </div>
+        </div>
         <div className={styles.imageContainer}>
           <Feed6 />
           <div className={styles.caption}>
