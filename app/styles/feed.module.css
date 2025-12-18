@@ -55,6 +55,17 @@
         bottom: 0;
         max-width: 10rem;
       }
+
+      .link {
+        text-decoration: underline;
+        text-underline-offset: 0.125rem;
+
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            text-decoration-color: var(--amber-9);
+          }
+        }
+      }
     }
 
     @media (min-width: 60rem) {
