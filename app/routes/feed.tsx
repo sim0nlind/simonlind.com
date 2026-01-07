@@ -28,7 +28,7 @@ export default function Photos() {
   return (
     <div className={styles.container}>
       <p className={styles.text}>
-        A feed of sketches, ideas, experiments & work-in-progress.
+        A feed of my work, sketches, ideas and experiments.
       </p>
       <section className={styles.imagesContainer}>
         <div className={styles.imageContainer}>
