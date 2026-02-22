@@ -22,6 +22,7 @@ import Feed17 from "../components/feed/17";
 import Feed18 from "../components/feed/18";
 import Feed19 from "../components/feed/19";
 import Feed20 from "../components/feed/20";
+import Feed21 from "../components/feed/21";
 
 export const meta: MetaFunction = () => {
   return createMetaTags({
@@ -37,6 +38,13 @@ export default function Photos() {
         A feed of my work, sketches, ideas and experiments.
       </p>
       <section className={styles.imagesContainer}>
+        <div className={styles.imageContainer}>
+          <Feed21 />
+          <div className={styles.caption}>
+            <p>Landing page</p>
+            <p>February, '26</p>
+          </div>
+        </div>
         <div className={styles.imageContainer}>
           <Feed20 />
           <div className={styles.caption}>
@@ -101,6 +109,7 @@ export default function Photos() {
             <a
               href="https://thelightof.day"
               target="_blank"
+              rel="noopener noreferrer"
               className={styles.link}
             >
               thelightof.day
