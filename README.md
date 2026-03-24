@@ -1,40 +1,32 @@
 # simonlind.com
 
-This repo contains the personal website for Simon Lind. It's build with [Remix](https://remix.run/docs).
+Personal website and portfolio for Simon Lind — built with [Remix](https://remix.run), [React](https://react.dev), and [Vite](https://vitejs.dev).
 
-## Development
+## Getting started
 
-Run the dev server:
+Make sure you have **Node.js 20+** installed, then:
 
-```shellscript
+```sh
+npm install
 npm run dev
 ```
 
-## Deployment
+The dev server will start at `http://localhost:5173`.
 
-First, build your app for production:
+## Scripts
 
-```sh
-npm run build
-```
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Build for production |
+| `npm start` | Run the production server |
+| `npm run typecheck` | Run TypeScript type checking |
+| `npm run lint` | Lint the codebase |
 
-Then run the app in production mode:
+## Tech stack
 
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-The site uses CSS modules for styling.
+- **Framework** — [Remix](https://remix.run) on [Vite](https://vitejs.dev)
+- **Styling** — CSS Modules
+- **Animations** — [Motion](https://motion.dev)
+- **Icons** — [Phosphor Icons](https://phosphoricons.com)
+- **Hosting** — [Vercel](https://vercel.com)
