@@ -5,8 +5,8 @@ export default function feed24() {
     <img
       src={img24}
       alt="Feed item 24"
-      width="1920"
-      height="1080"
+      width="1024"
+      height="576"
     />
   );
 }
