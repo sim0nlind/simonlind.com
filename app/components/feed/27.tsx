@@ -7,6 +7,7 @@ export default function feed27() {
       alt="Blog posts layout with 8 blog posts"
       width="1024"
       height="576"
+      style={{ border: "0.5px solid rgba(0, 0, 0, 0.08)" }}
     />
   );
 }
