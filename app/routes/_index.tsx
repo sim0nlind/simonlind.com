@@ -4,6 +4,7 @@ import styles from "../styles/_index.module.css";
 import profileImage from "../assets/profile-image.jpg";
 import HandwritteName from "../components/handwrittenName/handwrittenName";
 import { useCallback, useState } from "react";
+import { useLoaderData } from "@remix-run/react";
 import * as Toast from "@radix-ui/react-toast";
 import { X } from "@phosphor-icons/react/dist/ssr/X";
 import { Copy } from "@phosphor-icons/react/dist/ssr/Copy";
@@ -12,6 +13,15 @@ import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
 export const meta: MetaFunction = () => {
   return createMetaTags();
 };
+
+export function loader() {
+  return { clientNavigated: false };
+}
+
+export function clientLoader() {
+  return { clientNavigated: true };
+}
+clientLoader.hydrate = false;
 
 export default function Index() {
   const copyEmailToClipboard = useCallback(() => {
@@ -26,7 +36,9 @@ export default function Index() {
       });
   }, []);
 
+  const { clientNavigated } = useLoaderData<typeof loader>();
   const [open, setOpen] = useState(false);
+  const enterClass = clientNavigated ? styles.fadeIn : styles.animateEnter;
 
   return (
     <>
@@ -48,9 +60,13 @@ export default function Index() {
           <img
             src={profileImage}
             alt="portrait of Simon Lind"
-            className={styles.profileImage}
+            className={`${styles.profileImage} ${enterClass}`}
+            style={{ "--stagger": 0 } as React.CSSProperties}
           />
-          <div className={styles.infoAndLinks}>
+          <div
+            className={`${styles.infoAndLinks} ${enterClass}`}
+            style={{ "--stagger": 1 } as React.CSSProperties}
+          >
             <ul className={styles.info}>
               <li className={styles.name}>Simon Lind</li>
               <li>Software designer</li>
@@ -110,36 +126,43 @@ export default function Index() {
             </ul>
           </div>
         </div>
-        <div>
-          <div className={styles.text}>
-            <p>
-              I have more than 8 years of experience shaping products through
-              software design, frontend development and strategic product
-              thinking.
-            </p>
-            <p>
-              I co-founded{" "}
-              <a
-                href="https://eduflow.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                Eduflow
-                <ArrowUpRight size={12} className={styles.icon} />
-              </a>{" "}
-              where I led product and design. We sold Eduflow in 2023 to Multiverse.
-              After +2 years at Multiverse, I'm now back to building from 0 {'->'} 1 again.
-            </p>
-            <p>
-              When I’m not mulling over pixels, user stories and code I like to
-              spend my time in a pair of running shoes. I enjoy distance
-              running, but these days I’m mostly running after my two toddlers
-              to keep them out of trouble.
-            </p>
-          </div>
+        <div className={styles.text}>
+          <p
+            className={enterClass}
+            style={{ "--stagger": 2 } as React.CSSProperties}
+          >
+            I have more than 8 years of experience shaping products through
+            software design, frontend development and strategic product
+            thinking.
+          </p>
+          <p
+            className={enterClass}
+            style={{ "--stagger": 3 } as React.CSSProperties}
+          >
+            I co-founded{" "}
+            <a
+              href="https://eduflow.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              Eduflow
+              <ArrowUpRight size={12} className={styles.icon} />
+            </a>{" "}
+            where I led product and design. We sold Eduflow in 2023 to Multiverse.
+            After +2 years at Multiverse, I'm now back to building from 0 {'->'}  1 again.
+          </p>
+          <p
+            className={enterClass}
+            style={{ "--stagger": 4 } as React.CSSProperties}
+          >
+            When I'm not mulling over pixels, user stories and code I like to
+            spend my time in a pair of running shoes. I enjoy distance
+            running, but these days I'm mostly running after my two toddlers
+            to keep them out of trouble.
+          </p>
         </div>
-        <HandwritteName />
+        <HandwritteName animate={!clientNavigated} />
       </section>
     </>
   );
