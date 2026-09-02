@@ -37,6 +37,7 @@ import Feed32 from "../components/feed/32";
 import Feed33 from "../components/feed/33";
 import Feed34 from "../components/feed/34";
 import Feed35 from "../components/feed/35";
+import Feed36 from "../components/feed/36";
 
 export const meta: MetaFunction = () => {
   return createMetaTags({
@@ -49,6 +50,13 @@ export default function Photos() {
   return (
     <div className={styles.container}>
       <section className={styles.imagesContainer}>
+        <div className={styles.imageContainer}>
+          <Feed36 />
+          <div className={styles.caption}>
+            <p>Changelog</p>
+            <p>September, &apos;26</p>
+          </div>
+        </div>
         <div className={styles.imageContainer}>
           <Feed35 />
           <div className={styles.caption}>
